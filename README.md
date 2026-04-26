@@ -2,12 +2,11 @@
 
 > *Frame drums across multiple construction methods (stave-built, steam-bent, wood-turned, CNC-machined) and many cultural traditions (Irish bodhrán, Native American hand drum, Middle Eastern daf/riq/bendir, Brazilian pandeiro, Mongolian and Sami shamanic drums). Plus the companion mallets and drumsticks.*
 
-![Hero photo](images/00-hero-frame-drums.jpg)
-*(placeholder — hero photo forthcoming, candidates: a deerskin-on-stretcher-frame work-in-progress shot, or a fan-out of finished frames in different construction methods once builds begin)*
-
 ## What this is
 
 Engineering documentation for **frame drum construction** across the full range of methods I want to explore, plus the mallets and sticks that complete the family. The repository is structured around three threads:
+
+At the moment this repo is design intent and research structure rather than a finished build log. Photos, CAD, and per-method documentation will land here as the first drums actually get built.
 
 1. **Construction methods** — every viable way to build a frame drum, documented as I work through each:
    - **Stave-built** (the technique I learned at Morgan Drums, applied to a thin-shell frame profile)
@@ -76,22 +75,23 @@ The mallet/stick design work for **all** my drums lives here, since it crosses r
 
 Future skill stub: **`mallet-head-material-vs-tone-spectrum`** — to be extracted when the tongue-drum DoE Phase 1 data starts producing mallet-specific spectral signatures.
 
-## Repository structure
+## Planned repository structure
+
+As builds begin, this repo will likely grow into:
 
 ```
 frame-drum/
 ├── README.md                  ← you are here
 ├── LICENSE                    ← CC-BY 4.0
-├── (forthcoming)
-│   ├── images/                ← skin-prep, build photos, finished drums
-│   ├── CAD/                   ← per-method body models
-│   │   ├── stave/
-│   │   ├── steam-bent/
-│   │   ├── wood-turned/
-│   │   └── cnc-machined/
-│   ├── traditions/            ← per-tradition writeups
-│   ├── mallets-and-sticks/    ← cross-drum mallet + stick design work
-│   └── reference/             ← Feather Song Drums + traditional-construction references
+├── images/                    ← skin-prep, build photos, finished drums
+├── CAD/                       ← per-method body models
+│   ├── stave/
+│   ├── steam-bent/
+│   ├── wood-turned/
+│   └── cnc-machined/
+├── traditions/                ← per-tradition writeups
+├── mallets-and-sticks/        ← cross-drum mallet + stick design work
+└── reference/                 ← Feather Song Drums + traditional-construction references
 ```
 
 ## Status
