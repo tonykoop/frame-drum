@@ -14,7 +14,7 @@ Engineering documentation for **frame drum construction** across the full range 
    - **Steam-bent** (a single thin strip of hardwood bent into a hoop and scarf-joined — the traditional bodhrán approach)
    - **Wood-turned** (segmented or single-piece hoops turned on a lathe)
    - **CNC-machined** (single-piece or multi-segment hoops cut on the [`cnc`](https://github.com/tonykoop/cnc) Haas machines)
-   - **Inflatable-tire-tuned** (a contemporary tuning approach pioneered by [Feather Song Drums](https://feathersongdrums.com/) in New Zealand — an inflatable inner-tube wrapped around the inside of the rim provides continuously-adjustable head tension)
+   - **Inflatable-tire-tuned** (a contemporary tuning approach pioneered by [Feather Song Drums](https://jourdanneil.wixsite.com/feathersongdrums) in New Zealand — an inflatable inner-tube wrapped around the inside of the rim provides continuously-adjustable head tension)
 2. **Cultural traditions** — frame drums span more cultures than almost any other instrument family. Each tradition gets a documented section as I explore it:
    - **Irish bodhrán** — goatskin head, internal cross-brace, played with a tipper (cipín)
    - **Native American hand drum** — single-piece bent hoop, deerskin or elk-skin head, lashed back-strap, beater-style stick
