@@ -1,0 +1,4 @@
+member_id,target_note,target_hz,outside_diameter_in,inside_diameter_in,hoop_depth_in,wall_thickness_in,head_diameter_in,bearing_edge_radius_in,stave_count,stave_miter_deg,governing_model,manufacturing_path,notes
+FD-14,,180,14.0,13.25,2.50,0.375,13.50,0.125,16,11.25,membrane,steam-bent or stave-built,compact hand drum study
+FD-16,,150,16.0,15.25,2.75,0.375,15.50,0.125,16,11.25,membrane,steam-bent or stave-built,baseline first build
+FD-18,,125,18.0,17.00,3.00,0.500,17.25,0.156,20,9.00,membrane,stave-built or turned,lower voice study

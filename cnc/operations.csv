@@ -1,0 +1,5 @@
+operation,setup,tool,stock,output,release_check
+cut bending form disks,CNC router or bandsaw,1/4 in downcut or bandsaw blade,3/4 in MDF,16 in form disks,measure OD before use
+cut diameter template,laser or router,laser or 1/8 in bit,1/8 in plywood or acrylic,OD ID template,verify against drawing
+cut stave setup block,table saw or CNC,appropriate saw blade,hardwood scrap,11.25 deg reference block,confirm angle with gauge
+optional laminated ring cut,CNC router,1/4 in downcut,hardwood sheet or blank,ring segment or layer,air cut before real stock
