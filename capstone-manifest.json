@@ -1,7 +1,74 @@
 {
-  "title": "Frame Drum Packet",
-  "version": "v4.2 first-pass",
-  "slides": 13,
+  "title": "Frame Drum V5 Explorer Packet",
+  "repo": "tonykoop/frame-drum",
+  "issue": 1,
+  "version": "round30-v5-explorer",
+  "readiness": "L1_packet",
+  "status": "V5 explorer packet candidate; not a complete V5 build-packet candidate",
   "public_safe": true,
-  "notes": "Markdown deck is authoritative until PPTX is regenerated."
+  "fabrication_authority": [
+    "family-spec.csv",
+    "cad/frame_drum_hoop.scad",
+    "drawings/frame-drum-hoop-plan.dxf"
+  ],
+  "concept_or_preview_only": [
+    "drawings/frame-drum-hoop-plan.svg",
+    "explorer.html"
+  ],
+  "validation_loop": "validation-loop.csv",
+  "visual_output_register": "visual-output-register.csv",
+  "mcp_provenance_log": "cad/mcp-session-log.md",
+  "artifacts": [
+    {
+      "path": "README.md",
+      "role": "packet overview"
+    },
+    {
+      "path": "design.md",
+      "role": "design intent and assumptions"
+    },
+    {
+      "path": "family-spec.csv",
+      "role": "assumption-based design table"
+    },
+    {
+      "path": "cad/frame_drum_hoop.scad",
+      "role": "parametric OpenSCAD starter"
+    },
+    {
+      "path": "drawings/frame-drum-hoop-plan.dxf",
+      "role": "prototype hoop vector layout"
+    },
+    {
+      "path": "drawings/frame-drum-hoop-plan.svg",
+      "role": "human-readable drawing preview"
+    },
+    {
+      "path": "validation.csv",
+      "role": "basic packet validation checklist"
+    },
+    {
+      "path": "validation-loop.csv",
+      "role": "empirical measurement loop"
+    },
+    {
+      "path": "visual-output-register.csv",
+      "role": "visual authority register"
+    },
+    {
+      "path": "cad/mcp-session-log.md",
+      "role": "MCP provenance status"
+    },
+    {
+      "path": "explorer.html",
+      "role": "static V5 packet explorer"
+    }
+  ],
+  "remaining_unknowns": [
+    "No physical hoop or head measurements are recorded.",
+    "Head material, diameter behavior, humidity response, and area density are unverified.",
+    "Tensioning method, safety fixture, and build path are not selected.",
+    "No Blender, Illustrator, Photoshop, Adobe, or image-generation MCP sessions were run.",
+    "No hero render, exploded diagram, family image, macro images, or annotated print plate exists yet."
+  ]
 }

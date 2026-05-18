@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frame Drum V5 Explorer Packet</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172026;
+      --muted: #52616b;
+      --line: #c8d0d5;
+      --paper: #fbfaf7;
+      --panel: #ffffff;
+      --amber: #b9652b;
+      --green: #2f7d5b;
+      --blue: #2f6f9f;
+      --red: #a33f3f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.48 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    header {
+      padding: 28px clamp(18px, 4vw, 56px) 18px;
+      border-bottom: 1px solid var(--line);
+      background: #f2eee6;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 26px clamp(18px, 4vw, 36px) 44px;
+    }
+    h1, h2, h3 { margin: 0; line-height: 1.12; letter-spacing: 0; }
+    h1 { font-size: clamp(2rem, 4vw, 4.2rem); max-width: 900px; }
+    h2 { margin-top: 34px; font-size: 1.35rem; }
+    h3 { font-size: 1rem; }
+    p { margin: 10px 0 0; color: var(--muted); max-width: 820px; }
+    .status {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .pill {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 7px 10px;
+      font-size: 0.88rem;
+      font-weight: 650;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .card {
+      grid-column: span 4;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      min-height: 150px;
+    }
+    .wide { grid-column: span 8; }
+    .full { grid-column: 1 / -1; }
+    .metric {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .metric div {
+      border-left: 4px solid var(--amber);
+      background: #faf7f1;
+      padding: 10px;
+    }
+    .metric strong { display: block; font-size: 1.2rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 0.92rem;
+    }
+    th, td {
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      padding: 9px 8px;
+      vertical-align: top;
+    }
+    th { color: #35424b; background: #f4f7f7; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+      color: #27343b;
+    }
+    .authority { color: var(--green); font-weight: 700; }
+    .concept { color: var(--blue); font-weight: 700; }
+    .blocker { color: var(--red); font-weight: 700; }
+    .diagram {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+      border: 1px solid var(--line);
+      background: #f7f3ec;
+      display: block;
+    }
+    @media (max-width: 820px) {
+      .card, .wide { grid-column: 1 / -1; }
+      .metric { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Frame Drum V5 Explorer Packet</h1>
+    <p>Round 30 review surface for a frame drum starter packet. The current files are useful for planning and first-prototype review, but they do not represent measured, built, or fully validated V5 output.</p>
+    <div class="status" aria-label="packet status">
+      <span class="pill">Readiness: L1 packet</span>
+      <span class="pill">Fabrication: assumption-based starter</span>
+      <span class="pill">Measurement: required</span>
+      <span class="pill">MCP renders: not run</span>
+    </div>
+  </header>
+  <main>
+    <section class="grid" aria-label="packet overview">
+      <article class="card wide">
+        <h2>Baseline Family</h2>
+        <p>The design table frames three shallow single-head drums. FD-16 remains the first build target because it is large enough for hand response but small enough for steam-bent, stave-built, turned, or CNC-laminated hoop experiments.</p>
+        <div class="metric">
+          <div><strong>14 in</strong><span>compact hand drum study</span></div>
+          <div><strong>16 in</strong><span>baseline first build</span></div>
+          <div><strong>18 in</strong><span>lower voice study</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <h2>Authority</h2>
+        <p><span class="authority">Current authority</span>: <code>family-spec.csv</code>, <code>cad/frame_drum_hoop.scad</code>, and <code>drawings/frame-drum-hoop-plan.dxf</code>.</p>
+        <p><span class="blocker">Boundary</span>: these are not measured shop outputs. They must be checked against head material, fixture safety, and first build measurements.</p>
+      </article>
+      <article class="card full">
+        <h2>FD-16 Layout Preview</h2>
+        <svg class="diagram" viewBox="0 0 900 510" role="img" aria-label="FD-16 hoop plan preview">
+          <rect width="900" height="510" fill="#f7f3ec"></rect>
+          <g transform="translate(260 255)">
+            <circle r="170" fill="none" stroke="#172026" stroke-width="5"></circle>
+            <circle r="162" fill="none" stroke="#52616b" stroke-width="3" stroke-dasharray="8 8"></circle>
+            <circle r="165" fill="none" stroke="#2f6f9f" stroke-width="2"></circle>
+            <line x1="-195" y1="0" x2="195" y2="0" stroke="#a0a9af" stroke-width="1"></line>
+            <line x1="0" y1="-195" x2="0" y2="195" stroke="#a0a9af" stroke-width="1"></line>
+            <text x="-70" y="-190" font-size="20" fill="#172026">FD-16 hoop</text>
+            <text x="-118" y="215" font-size="15" fill="#52616b">OD 16.0 in / ID 15.25 in</text>
+          </g>
+          <g transform="translate(635 180)">
+            <rect x="-105" y="-45" width="210" height="90" fill="none" stroke="#172026" stroke-width="4"></rect>
+            <path d="M -105 -45 Q -72 -28 -105 -11" fill="none" stroke="#b9652b" stroke-width="4"></path>
+            <text x="-105" y="-70" font-size="20" fill="#172026">Hoop section</text>
+            <text x="-105" y="72" font-size="15" fill="#52616b">Depth 2.75 in; edge radius 0.125 in</text>
+          </g>
+          <g transform="translate(635 365)">
+            <path d="M -78 60 L 0 -58 L 78 60 Z" fill="none" stroke="#172026" stroke-width="4"></path>
+            <text x="-108" y="-78" font-size="20" fill="#172026">Stave reference</text>
+            <text x="-108" y="88" font-size="15" fill="#52616b">16 segments; 11.25 degree miter</text>
+          </g>
+        </svg>
+      </article>
+    </section>
+
+    <section>
+      <h2>Validation Loop</h2>
+      <table>
+        <thead>
+          <tr><th>Gate</th><th>Method</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Head tension</td><td>Record low, medium, and high tension tuner or FFT captures with humidity noted.</td><td class="blocker">measurement required</td></tr>
+          <tr><td>Resonance</td><td>Compare measured fundamental and modal spread against the first-order membrane model.</td><td class="blocker">measurement required</td></tr>
+          <tr><td>Strike response</td><td>Capture center, mid-radius, and near-rim hand and beater strikes with fixed microphone distance.</td><td class="blocker">measurement required</td></tr>
+          <tr><td>Fixture safety</td><td>Dry-run clamps, lacing, tuners, or inflatable-tube setup before loading the head.</td><td class="blocker">method unselected</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Artifact Map</h2>
+      <table>
+        <thead>
+          <tr><th>Artifact</th><th>Role</th><th>Authority</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>family-spec.csv</code></td><td>FD-14/FD-16/FD-18 design table</td><td class="authority">assumption-based fabrication candidate</td></tr>
+          <tr><td><code>cad/frame_drum_hoop.scad</code></td><td>Parametric hoop CAD starter</td><td class="authority">derived from design table</td></tr>
+          <tr><td><code>drawings/frame-drum-hoop-plan.dxf</code></td><td>FD-16 vector layout starter</td><td class="authority">verify before cutting</td></tr>
+          <tr><td><code>drawings/frame-drum-hoop-plan.svg</code></td><td>Human-readable preview</td><td class="concept">derived preview</td></tr>
+          <tr><td><code>visual-output-register.csv</code></td><td>Authority register</td><td>packet control record</td></tr>
+          <tr><td><code>validation-loop.csv</code></td><td>Empirical close-the-loop checklist</td><td>measurement plan</td></tr>
+          <tr><td><code>cad/mcp-session-log.md</code></td><td>MCP provenance status</td><td>records that no MCP session was used here</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
