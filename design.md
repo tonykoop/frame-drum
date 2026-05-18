@@ -3,7 +3,9 @@
 ## Design Intent
 
 This packet defines a public-safe first frame-drum build family centered on a
-16 in class single-head drum. The goal is not to collapse every frame-drum
+16 in class single-head drum. The current readiness is `L1_packet`: the repo has
+reviewable design tables, starter CAD/vector artifacts, and a measurement plan,
+but no built or measured drum. The goal is not to collapse every frame-drum
 tradition into one object; it is to create a repeatable engineering baseline
 that can branch into bodhran, hand-drum, bendir, pandeiro, and tuned
 contemporary variants as real builds are measured.
@@ -46,6 +48,11 @@ response under different head tensions.
 | FD-16 | 16 in | 2.75 in | 0.375 in | baseline hand drum |
 | FD-18 | 18 in | 3.00 in | 0.500 in | low hand drum / bendir study |
 
+These values are the current design-table authority for the starter model, not
+measured fabrication evidence. `family-spec.csv`, `cad/frame_drum_hoop.scad`,
+and `drawings/frame-drum-hoop-plan.dxf` must be reconciled after the first
+prototype is measured.
+
 ## Manufacturing Strategy
 
 The first build should use either steam bending or segmented/stave work because
@@ -57,6 +64,8 @@ claim that verified G-code exists.
 
 - Dimensions are derived estimates until the first physical prototype is built.
 - Natural hide thickness and moisture response must be measured per head.
+- Shell diameter, head material, tensioning method, and safety fixture choices
+  remain assumptions until a specific build path is selected and measured.
 - Cultural/traditional variants require attribution and tradition-specific
   research before being presented as anything more than engineering studies.
 - Feather Song style inflatable tuning is treated as credited inspiration and
@@ -71,3 +80,6 @@ claim that verified G-code exists.
 - Head tension can be adjusted or documented repeatably.
 - Player ergonomics are checked for hand access, weight, rim comfort, and
   mallet clearance.
+
+See `validation-loop.csv` for the Round 30 measurement loop covering head
+tension, resonance, strike response, hoop roundness, and fixture safety.

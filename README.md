@@ -6,7 +6,7 @@
 
 Engineering documentation for **frame drum construction** across the full range of methods I want to explore, plus the mallets and sticks that complete the family. The repository is structured around three threads:
 
-At the moment this repo is design intent and research structure rather than a finished build log. Photos, CAD, and per-method documentation will land here as the first drums actually get built.
+At the moment this repo is design intent and research structure rather than a finished build log. Round 30 adds a V5 explorer surface, an explicit visual-authority register, and a validation loop, but it does not promote the packet to measured or build-ready status. Photos, generated renders, MCP-derived art, and per-method documentation will land here as the first drums actually get built.
 
 1. **Construction methods** — every viable way to build a frame drum, documented as I work through each:
    - **Stave-built** (the technique I learned at Morgan Drums, applied to a thin-shell frame profile)
@@ -94,9 +94,34 @@ frame-drum/
 └── reference/                 ← Feather Song Drums + traditional-construction references
 ```
 
+## V5 explorer packet status
+
+Current status: `L1_packet` / V5 explorer packet candidate. Fabrication
+authority is limited to the assumption-based design table and starter vector
+artifacts listed in `visual-output-register.csv`: `family-spec.csv`,
+`cad/frame_drum_hoop.scad`, and `drawings/frame-drum-hoop-plan.dxf`. These
+files are not measured, runtime-verified, or shop-validated.
+
+Round 30 explorer files:
+
+| File | Role | Authority |
+|---|---|---|
+| `explorer.html` | Static packet explorer for review | concept/support only |
+| `capstone-manifest.json` | Root artifact manifest | metadata |
+| `visual-output-register.csv` | Visual authority register | authority map |
+| `validation-loop.csv` | Measurement-required validation loop | validation plan |
+| `cad/mcp-session-log.md` | MCP provenance status | provenance notes |
+| `drawings/frame-drum-hoop-plan.dxf` | FD-16 hoop layout starter | assumption-based fabrication candidate |
+
+Remaining V5 blockers: no physical hoop/head measurements, no selected
+tensioning fixture, no recorded resonance or strike-response captures, no
+Blender/Illustrator/Photoshop/Adobe/image-generation MCP sessions, no hero
+render, no exploded diagram, and no annotated print plate.
+
 ## Status
 
-A repository in motion, not a finished portfolio piece — most content forthcoming.
+A repository in motion, not a finished portfolio piece. The current packet is
+reviewable, but not a complete V5 build-packet candidate.
 
 | Section | Status |
 |---|---|
