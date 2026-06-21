@@ -70,5 +70,16 @@
     "Tensioning method, safety fixture, and build path are not selected.",
     "No Blender, Illustrator, Photoshop, Adobe, or image-generation MCP sessions were run.",
     "No hero render, exploded diagram, family image, macro images, or annotated print plate exists yet."
-  ]
+  ],
+  "engineering": {
+    "wolfram": [
+      {
+        "source_file": "percussion/frame-drum/frame-drum-starter.wl",
+        "cloud_path": "Musical_Instruments/percussion/frame-drum/frame-drum-starter.wl",
+        "cloud_url": "https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/percussion/frame-drum/frame-drum-starter.wl",
+        "permission": "Public-Execute",
+        "kind": "acoustics-starter"
+      }
+    ]
+  }
 }
