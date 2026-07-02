@@ -1,0 +1,34 @@
+{
+  "product": "frame-drum",
+  "pipeline": "studiopipeline:evolution-pipeline",
+  "stage": "0-intake",
+  "master_revision": "rev-A (pre-commit intake, 2026-07-01)",
+  "generated": "2026-07-01",
+  "cad_masters": [
+    {
+      "path": "cad/frame_drum_hoop.scad",
+      "format": "openscad-source",
+      "sha256": "90568a23225f12f86e1fabf8ad95a1fc086ab896aa372453d0e5b0184ac06164",
+      "authority": "pending_measurement",
+      "lossy": false,
+      "notes": "Existing parametric master (EXISTING MASTERS clause; kept as-is). Family-row-driven hoop envelope (outside/inside diameter, hoop depth, bearing-edge radius) for FD-14/16/18."
+    },
+    {
+      "path": "family-spec.csv",
+      "format": "design-table",
+      "sha256": "92b31b8efeafc5e2364ba31a31f069081da796329408e3d7016ac29af9c355f3",
+      "authority": "fabrication",
+      "lossy": false,
+      "notes": "Current dimensional authority (FD-14/16/18 family: diameters, hoop depth, wall thickness, bearing edge radius, stave count/miter)."
+    },
+    {
+      "path": "frame-drum-starter.wl",
+      "format": "wolfram-source",
+      "sha256": "e09b35c1dbafb56deb69365ba357837a85fccee68a370890a52ecec9a4822392",
+      "authority": "derived_preview",
+      "lossy": false,
+      "notes": "Membrane-mode (Bessel J0 root) starter model, source-only (not executed); L2 evidence. Embedded live in explorer.html via Wolfram Cloud."
+    }
+  ],
+  "notes": "OpenSCAD source + family-spec.csv design table are the current masters; no STEP export yet (SolidWorks/CNC export is out of scope for this intake pass). Gate A (Alpha workspace compile) not yet run. No physical hoop or head has been built or measured."
+}

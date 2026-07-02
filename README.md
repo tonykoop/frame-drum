@@ -8,6 +8,34 @@ Engineering documentation for **frame drum construction** across the full range 
 
 At the moment this repo is design intent and research structure rather than a finished build log. Round 30 adds a V5 explorer surface, an explicit visual-authority register, and a validation loop, but it does not promote the packet to measured or build-ready status. Photos, generated renders, MCP-derived art, and per-method documentation will land here as the first drums actually get built.
 
+**Status:** L1 concept packet
+
+## Readiness
+
+L1 concept packet. This repo explicitly frames itself as a V5 **explorer
+packet candidate**, not a complete V5 build-packet candidate — see
+"V5 explorer packet status" below for the honest accounting of what is
+assumption-based vs. what would be required to call this L2 or higher (a
+built/measured prototype, sourced supply data, and MCP-derived visual
+evidence are all still outstanding).
+
+## Packet Contents
+
+- `design.md` - membrane governing model, baseline FD-14/16/18 geometry, and
+  assumptions.
+- `bom.csv`, `sourcing.csv`, `cut-list.csv`, `validation.csv`,
+  `validation-loop.csv` - first-pass shop packet and measurement-loop tables.
+- `assembly-manual.md`, `risks.md`, `photo-shotlist.md` - build flow and
+  validation documentation.
+- `drawing-brief.md`, `drawings/frame-drum-hoop-plan.dxf` - starter fabrication
+  vector artifacts.
+- `cad/frame_drum_hoop.scad` - parametric OpenSCAD master driven by
+  `family-spec.csv` (FD-14/16/18 rows); authority `pending_measurement`.
+- `frame-drum-starter.wl` - Wolfram membrane-mode starter model, embedded live
+  in `explorer.html` via Wolfram Cloud; source-only, not executed here.
+- `evolution/` - evolution-pipeline Stage 0 intake: master manifest,
+  design-intent, and revision register (Gate A not yet run).
+
 1. **Construction methods** — every viable way to build a frame drum, documented as I work through each:
    - **Stave-built** (the technique I learned at Morgan Drums, applied to a thin-shell frame profile)
    - **Steam-bent** (a single thin strip of hardwood bent into a hoop and scarf-joined — the traditional bodhrán approach)
@@ -96,7 +124,8 @@ frame-drum/
 
 ## V5 explorer packet status
 
-Current status: `L1_packet` / V5 explorer packet candidate. Fabrication
+Current status: `L1 concept packet` / V5 explorer packet candidate (not a
+complete V5 build-packet candidate). Fabrication
 authority is limited to the assumption-based design table and starter vector
 artifacts listed in `visual-output-register.csv`: `family-spec.csv`,
 `cad/frame_drum_hoop.scad`, and `drawings/frame-drum-hoop-plan.dxf`. These
