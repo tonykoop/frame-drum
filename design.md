@@ -83,3 +83,23 @@ claim that verified G-code exists.
 
 See `validation-loop.csv` for the Round 30 measurement loop covering head
 tension, resonance, strike response, hoop roundness, and fixture safety.
+
+## Arena/Registry Readiness — Geometry Facts
+
+Consolidates the Baseline Geometry table above (FD-16, the baseline size)
+into registry-candidate form (Code-CAD Arena,
+`makerbench-hwe/tasks/code_cad_arena/registry.json`). No new claims —
+reformats existing values and does unit conversion only. Single hoop-shell
+body, cleanest envelope in the repos surveyed this pass.
+
+| Field | Value | Source |
+|---|---|---|
+| task_kind | hoop_shell (frame drum shell; membrane head is a separate bought/tensioned part, not CAD-modeled here) | Design Intent |
+| named params | outside_diameter_in: 16, hoop_depth_in: 2.75, wall_thickness_in: 0.375 | Baseline Geometry table (FD-16 row) |
+| envelope_mm | [406, 406, 70] (16 in OD ≈ 406 mm for L/W; 2.75 in depth ≈ 70 mm for H) | Baseline Geometry table, direct unit conversion |
+| assembly | false (single hoop shell; head/tensioning hardware are bought parts outside CAD scope) | Baseline Geometry + Manufacturing Strategy |
+| min_bodies | 1 | same |
+| size variants | FD-14 → [356, 356, 64] mm; FD-18 → [457, 457, 76] mm (same conversion applied to the other two rows) | Baseline Geometry table |
+
+**Arena-ready** for the hoop shell task — no gaps, all values already
+present in the packet, just needed consolidating.
